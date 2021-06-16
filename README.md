@@ -11,11 +11,12 @@ The following command loads the roles owncloud, redis, apache, php into ~/.ansib
 ansible-galaxy install -r roles/requirements.yml
 ```
 
-Repeat `source ~/ansible/bin/activate` whenever you re-login again.
+When you get the error message "The conditional check 'var_files' failed.",
+you are using an old version of ansible. Re-run `source ~/ansible/bin/activate`
 
 Run the owncloud playbook (and database, and redis) with the ubuntu group vars:
 ```
-ansible-playbook -i inventories/ubuntu-minimal playbooks/setup.yml
+ansible-playbook -i inventories/ubuntu-20.04/ playbooks/setup.yml
 service apache2 restart		# FIXME: ansible should restart apache.
 ```
 

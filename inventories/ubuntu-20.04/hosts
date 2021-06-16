@@ -1,0 +1,12 @@
+[all:vars]
+ansible_connection=local
+ansible_user=root
+
+[owncloudhosts]
+localhost
+
+[databasehosts]
+localhost
+
+[redishosts]
+localhost
