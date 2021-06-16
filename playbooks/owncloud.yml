@@ -1,0 +1,8 @@
+---
+- hosts: owncloudhosts
+  roles:
+    - apache
+    - php
+    - owncloud
+...
+
