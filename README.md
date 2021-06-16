@@ -1,5 +1,5 @@
 # oc-qa-ansible
-Playgrund for the ownCloud QA team
+Playground for the ownCloud QA team
 
 Ansible 2.10 is needed for owncloud, ubuntu defaults are too old.
 
