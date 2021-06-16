@@ -16,4 +16,6 @@ Repeat `source ~/ansible/bin/activate` whenever you re-login again.
 Run the owncloud playbook (and database, and redis) with the ubuntu group vars:
 ```
 ansible-playbook -i inventories/ubuntu-minimal playbooks/setup.yml
+service apache2 restart		# FIXME: ansible should restart apache.
 ```
+
